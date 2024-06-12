@@ -16,15 +16,15 @@ CREATE TABLE user (
 
 CREATE TABLE manga (
     manga_id MEDIUMINT UNSIGNED AUTO_INCREMENT NOT NULL, 
-    title VARCHAR(30) NOT NULL,
-    author VARCHAR(20) NOT NULL,
-    genre VARCHAR(20) NOT NULL,
-    volume VARCHAR(10) NOT NULL,
-    mangaDesc VARCHAR(300) NOT NULL,
-    releasedDate VARCHAR(10) NOT NULL, 
-    publisher VARCHAR(20) NOT NULL,
-    price VARCHAR(10) NOT NULL,
-    imgUrl MEDIUMINT, 
+    title VARCHAR(50) NOT NULL,
+    author VARCHAR(30) NOT NULL,
+    genre VARCHAR(50) NOT NULL,
+    volume VARCHAR(30) NOT NULL,
+    mangaDesc MEDIUMTEXT NOT NULL,
+    releasedDate VARCHAR(30) NOT NULL, 
+    publisher VARCHAR(30) NOT NULL,
+    price VARCHAR(25) NOT NULL,
+    imgUrl MEDIUMTEXT, 
     CONSTRAINT pk_manga_id PRIMARY KEY (manga_id)
-)
+);
 

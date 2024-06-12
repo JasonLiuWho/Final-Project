@@ -16,7 +16,7 @@ VALUES(
     "Yuji Itadori is high schooler who spends his days visiting his bedridden grandfather. Although he looks like your average teenager, his immense physical strength is something to behold! Every sports club wants him to join, but Itadori would rather hang out with the school outcasts in the Occult Club. One day, the club manages to get their hands on a sealed cursed object, but little do they know the terror they’ll unleash when they break the seal…",
     "December 3, 2019",
     "VIZ Media",
-    11.99
+    11.99,
     "https://m.media-amazon.com/images/I/81TmHlRleJL._AC_UF1000,1000_QL80_.jpg"
 ),
 (
@@ -28,7 +28,7 @@ VALUES(
     Not one to depend on others, Twilight has his work cut out for him procuring both a wife and a child for his mission to infiltrate an elite private school. What he doesn’t know is that the wife he’s chosen is an assassin and the child he’s adopted is a telepath!",
     "March 25, 2019",
     "VIZ Meida",
-    11.99
+    11.99,
     "https://m.media-amazon.com/images/I/71vMGRog+iL._AC_UF1000,1000_QL80_.jpg"
 ),
 (
@@ -39,7 +39,7 @@ VALUES(
     "The story centers around a boy by the name of Jinwoo Sung. He is known throughout the land as The Weakest Hunter on Earth. Even E-Rank dungeons, which are the lowest difficulty, prove to be a problem for him. He always comes out of these dungeons with injuries… some of them life-threatening. If it weren’t for a healer in his party, he would have died many times by now.",
     "July 25, 2016",
     "D&C Media",
-    20.00
+    20.00,
     "https://m.media-amazon.com/images/I/71BFjpc84NL._AC_UF1000,1000_QL80_.jpg"
 ),
 (

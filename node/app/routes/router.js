@@ -5,9 +5,12 @@ const port = process.env.port || 3005
 
 router.get("/api", (req, res)=> {
     res.json({
-        "All Users": `http://localhost:${port}/api/user`
+        "All Users": `http://localhost:${port}/api/user`,
+        "Mangas": `http://localhost:${port}/api/manga`
     })
 })
+
+router.use("api/manga", require("./api/mangaRoutes"))
 
 router.use("/api/user", require("./api/userRoutes"))
 
