@@ -1,6 +1,6 @@
-const con = require("../config/dbconfig")
+const con = require("../../config/dbconfig")
 
-const dao = {
+const daoCommon = {
     findAll: (req, res)=> {
         con.execute(
             `SELECT * FROM user;`,
@@ -81,4 +81,4 @@ const dao = {
     }
 }
 
-module.exports = dao
+module.exports = daoCommon

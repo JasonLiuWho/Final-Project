@@ -1,7 +1,7 @@
 const express = require("express")
 const router  = express.Router()
 
-const dao = require ("../../daos/dao")
+const dao = require ("../../daos/api/dao")
 
 router.get("/", (req, res)=> {
     dao.findAll(req, res)
