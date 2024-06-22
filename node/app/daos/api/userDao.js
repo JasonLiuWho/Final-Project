@@ -1,7 +1,24 @@
 const con = require("../../config/dbconfig")
 
-const mangaDao = {
-    table: "manga",
+const userDao = {
+    table: "user",
+    
+    sort: (res, table)=> {
+        con.execute(
+            `SELECT * FROM ${table} ORDER BY lName, fName;`,
+            (error, rows)=> {
+                if (!error) {
+                    if (rows.length === 1) {
+                        res.json(...rows)
+                    } else {
+                        res.json(rows)
+                    }
+                } else {
+                    console.log("DAO ERROR:", error)
+                }
+            }
+        )
+    },
 
     create: (req, res, table)=> {
         if (Object.keys(req.body).length === 0)
@@ -28,24 +45,7 @@ const mangaDao = {
                 }
             )
         }
-    },
-
-    sort: (req, table)=> {
-        con.execute(
-            `SELECT * FROM ${table} ORDER BY manga_id ;`,
-            (error, rows)=> {
-                if (!error) {
-                    if (rows.length === 1) {
-                        res.json(...rows)
-                    } else {
-                        res.json(rows)
-                    }
-                } else {
-                    console.log("DAO ERROR:", error)
-                }
-            }
-        )
     }
 }
 
-module.exports = mangaDao
+module.exports = userDao

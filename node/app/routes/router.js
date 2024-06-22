@@ -6,13 +6,18 @@ const port = process.env.port || 3005
 router.get("/api", (req, res)=> {
     res.json({
         "All Users": `http://localhost:${port}/api/user`,
-        "Mangas": `http://localhost:${port}/api/manga`
+        "Mangas": `http://localhost:${port}/api/manga`,
+        "Authors": `http://localhost:${port}/api/author`,
+        "Genres": `http://localhost:${port}/api/genre`,
+        "Publishers": `http://localhost:${port}/api/publisher`
     })
 })
 
-router.use("api/manga", require("./api/mangaRoutes"))
+const tables = ["user", "manga", "author", "genre", "publisher"]
 
-router.use("/api/user", require("./api/userRoutes"))
+tables.forEach(table => {
+    router.use(`/api/${table}`, require(`./api/${table}Routes`))
+})
 
 router.get("*", (req, res)=> {
     if (req.url == "/favicon.ico") {
