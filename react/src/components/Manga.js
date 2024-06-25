@@ -5,7 +5,7 @@ import Card from "./Card"
 
 const Mangas =()=> {
 
-    const [ mangas, setMangas ] = useState([])
+    const [ manga, setMangas ] = useState([])
 
     useEffect(() => {
         axios.get("http://localhost:3005/api/manga").then(res => {
@@ -13,7 +13,7 @@ const Mangas =()=> {
         })
     }, [])
 
-    const mangaCards = mangas.map(pc => {
+    const mangaCards = manga.map(manga => {
         return <Card
                 key={manga.manga_id}
                 id={manga.manga_id}
@@ -26,7 +26,7 @@ const Mangas =()=> {
     return (
         <main className="main" id="mangaMain">
             <div className="container">
-                <h2>Manga's</h2>
+                <h2>Mangas</h2>
                 <div className="row row-cols-1-md-5 g-4">
                     { mangaCards }
                 </div>

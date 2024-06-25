@@ -10,10 +10,30 @@ body {
     background-color: #3b413c;
 }
 
+.mangaTitle {
+    color: orangered;
+}
+
 .log {
     color: wheat;
 }
 
 #formMain {
     border: 2px solid wheat;
+}
+
+.nav-link {
+    /* border: 1px solid blue; */
+    color: white;
+}
+
+.nav-link {
+    color: cadetblue;
+}
+
+.nav-link:hover {
+    background-color: orangered;
+    border-radius: 5px;
+    transition: 1s ease;
+    color: white;
 }

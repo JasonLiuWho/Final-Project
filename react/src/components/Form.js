@@ -1,9 +1,13 @@
+import { MdOutlineAttachEmail } from "react-icons/md";
+import { FaUser } from "react-icons/fa";
+
+
 const Form =( { formData, handleChange, handleSubmit } )=> {
 
     return(
         <main className="main" id="formMain">
             <div className="container">
-                <h2 className="text-center text-capitalize">create a login</h2>
+                <h2 className="text-center text-capitalize">create a login <FaUser className="mb-2" /></h2>
                 <form id="form" className="form" 
                 onSubmit={handleSubmit}>
                     <div className="mb-3 row">
@@ -34,7 +38,7 @@ const Form =( { formData, handleChange, handleSubmit } )=> {
                     </div>
                     <div className="mb-3 row">
                         <div className="col-auto">
-                            <label htmlFor="email" className="form-label text-capitalize">email</label>
+                            <label htmlFor="email" className="form-label text-capitalize">email <MdOutlineAttachEmail /> </label>
                             <input
                                 type="email"
                                 id="email"

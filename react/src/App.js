@@ -13,13 +13,13 @@ const App = ()=> {
     return(
         <>
             <Header />
-            <Routes>
-                <Route path="/" element={ <Home />} />
-                <Route path="/manga" element={ <Manga />} />
-                <Route path="/login" element={ <Login />} />
-                <Route path="/contact" element={ <Contact />} />
-                <Route path="*" element={ <ErrorPage />} />
-            </Routes>
+                <Routes>
+                    <Route path="/home" element={ <Home />} />
+                    <Route path="/manga" element={ <Manga />} />
+                    <Route path="/login" element={ <Login />} />
+                    <Route path="/contact" element={ <Contact />} />
+                    <Route path="*" element={ <ErrorPage />} />
+                </Routes>
             <Footer />
         </>
     )

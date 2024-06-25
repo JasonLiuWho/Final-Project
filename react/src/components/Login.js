@@ -1,3 +1,7 @@
+import { useState, useEffect } from "react"
+import Form from "./Form"
+import axios from "axios"
+
 const Login =()=> {
 
     const [ formData, setFormData ] = useState({
@@ -14,8 +18,6 @@ const Login =()=> {
         axios.get('http://localhost:3005/api/user').then(res => setUsers(res.data))
 
     }, [])
-
-    // console.log(users)
 
 
     const handleChange = (event)=> {
