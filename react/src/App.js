@@ -7,6 +7,7 @@ import Home from "./components/Home"
 import Manga from "./components/Manga"
 import Login from "./components/Login"
 import Contact from "./components/Contact"
+import Single from "./components/Single"
 
 const App = ()=> {
 
@@ -14,10 +15,11 @@ const App = ()=> {
         <>
             <Header />
                 <Routes>
-                    <Route path="/home" element={ <Home />} />
+                    <Route path="/" element={ <Home />} />
                     <Route path="/manga" element={ <Manga />} />
                     <Route path="/login" element={ <Login />} />
                     <Route path="/contact" element={ <Contact />} />
+                    <Route path="/:path/:id" element={ <Single /> } />
                     <Route path="*" element={ <ErrorPage />} />
                 </Routes>
             <Footer />

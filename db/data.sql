@@ -79,7 +79,7 @@ VALUES
 ("Media Factory"),
 ("Shueisha");
 
-INSERT INTO manga (title, volume, author_id, mangaDesc, releasedDate, publisher_id, price, imgUrl)
+INSERT INTO manga (title, author_id, volume, mangaDesc, releasedDate, publisher_id, price, imgUrl)
 VALUES(
     "Jujutsu Kaisen",
     1,
@@ -88,7 +88,7 @@ VALUES(
     "December 3, 2019",
     1,
     11.99,
-    "https://m.media-amazon.com/images/I/81TmHlRleJL._AC_UF1000,1000_QL80_.jpg"
+    "jjkIMG_1.jpg"
 ),
 (
     "Spy x Family",
@@ -99,7 +99,7 @@ VALUES(
     "March 25, 2019",
     1,
     11.99,
-    "https://m.media-amazon.com/images/I/71vMGRog+iL._AC_UF1000,1000_QL80_.jpg"
+    "spy_1.jpg"
 ),
 (
     "Solo Leveling",
@@ -109,7 +109,7 @@ VALUES(
     "July 25, 2016",
     2,
     20.00,
-    "https://m.media-amazon.com/images/I/71BFjpc84NL._AC_UF1000,1000_QL80_.jpg"
+    "solo_1.jpg"
 ),
 (
     "Chainsaw Man",
@@ -119,7 +119,7 @@ VALUES(
     "October 6, 2020",
     1,
     11.99,
-    "https://m.media-amazon.com/images/I/81s8xJUzWGL._AC_UF1000,1000_QL80_.jpg"
+    "chain_1.jpg"
 ),
 (
     "Akame ga Kill!",
@@ -129,7 +129,7 @@ VALUES(
     "August 21, 2010",
     3,
     13.00,
-    "https://m.media-amazon.com/images/I/7129tFfuevL._AC_UF1000,1000_QL80_.jpg"
+    "akame_1.jpg"
 ),
 (
     "The Promised Neverland",
@@ -139,7 +139,7 @@ VALUES(
     "August 1, 2016",
     1,
     9.99,
-    "https://m.media-amazon.com/images/I/81GIb6GMhRL._AC_UF1000,1000_QL80_.jpg"
+    "never_1.jpg"
 ),
 (
     "Berserk",
@@ -149,7 +149,7 @@ VALUES(
     "August 25, 1989",
     4,
     14.99,
-    "https://m.media-amazon.com/images/I/71lnvXSiITL._AC_UF1000,1000_QL80_.jpg"
+    "berserk_1.jpg"
 ),
 (
     "Kakegurui",
@@ -159,7 +159,7 @@ VALUES(
     "March 22, 2014",
     3,
     15.00,
-    "https://m.media-amazon.com/images/I/818zXvZnzcL._AC_UF1000,1000_QL80_.jpg"
+    "kakegurui_1.jpg"
 ),
 (
     "Blue Lock",
@@ -169,7 +169,7 @@ VALUES(
     "November 16, 2018",
     5,
     12.99,
-    "https://m.media-amazon.com/images/I/81Z85oL1xvL._AC_UF1000,1000_QL80_.jpg"
+    "blue_1.jpg"
 ),
 (
     "Attack on Titan",
@@ -179,7 +179,7 @@ VALUES(
     "April 7, 2013",
     5,
     10.99,
-    "https://m.media-amazon.com/images/I/71S8O-3xLVL._AC_UF1000,1000_QL80_.jpg"
+    "attack_1.jpg"
 ),
 (
     "Bleach",
@@ -189,7 +189,7 @@ VALUES(
     "August 7, 2001",
     1,
     11.99,
-    "https://m.media-amazon.com/images/I/81vbN16NtXL._AC_UF1000,1000_QL80_.jpg"
+    "bleach_1.jpg"
 ),
 (
     "Tokyo Revengers",
@@ -199,7 +199,7 @@ VALUES(
     "May 17 2017",
     5,
     22.99,
-    "https://m.media-amazon.com/images/I/51U32pESRlL.jpg"
+    "revengers_1.jpg"
 ),
 (
     "Tokyo Ghoul",
@@ -209,7 +209,7 @@ VALUES(
     "September 8, 2011",
     1,
     12.99,
-    "https://m.media-amazon.com/images/I/81gv-D-LqhL._AC_UF1000,1000_QL80_.jpg"
+    "ghoul_1.jpg"
 ),
 (
     "Hunter x Hunter",
@@ -219,7 +219,7 @@ VALUES(
     "March 3, 1998",
     1,
     11.99,
-    "https://m.media-amazon.com/images/I/815uHbvvu1L._AC_UF1000,1000_QL80_.jpg"
+    "hunt_1.jpg"
 ),
 (
     "The Rising of the Shield Hero",
@@ -229,7 +229,7 @@ VALUES(
     "February 5, 2014",
     6,
     13.95,
-    "https://m.media-amazon.com/images/I/71T5jYD0A3L._AC_UF1000,1000_QL80_.jpg"
+    "hero_1.jpg"
 ),
 (
     "One Punch Man",
@@ -239,7 +239,7 @@ VALUES(
     "June 14, 2012",
     7,
     11.99,
-    "https://m.media-amazon.com/images/I/81VAgJoB3BL._AC_UF1000,1000_QL80_.jpg"
+    "punch_1.jpg"
 );
 
 INSERT INTO manga_to_genre (manga_id, genre_id)

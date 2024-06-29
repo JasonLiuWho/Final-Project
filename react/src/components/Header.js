@@ -14,7 +14,7 @@ const Header =()=> {
                     </div>
                     <div className="col-md-8">
                         <nav className="nav justify-content-end text-capitalize mt-1">
-                            <Link to="/home" className="nav-link">home</Link>
+                            <Link to="/" className="nav-link">home</Link>
                             <Link to="/manga" className="nav-link">manga</Link>
                             <Link to="/login" className="nav-link">sign up</Link>
                             <Link to="/contact" className="nav-link">contact</Link>

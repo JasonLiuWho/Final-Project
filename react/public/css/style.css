@@ -1,5 +1,9 @@
 * { box-sizing: border-box;}
 
+:root {
+    --font-family: "Permanent Marker", cursive;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -12,6 +16,7 @@ body {
 
 .mangaTitle {
     color: orangered;
+    font-family: var(--font-family);
 }
 
 .log {
@@ -33,7 +38,14 @@ body {
 
 .nav-link:hover {
     background-color: orangered;
-    border-radius: 5px;
+    border-radius: 10px;
     transition: 1s ease;
     color: white;
+}
+
+.card-title {
+    font-size: large;
+    color: black;
+    background-color: black;
+    border-radius: 10px;
 }

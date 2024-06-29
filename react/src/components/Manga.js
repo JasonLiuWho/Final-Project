@@ -14,20 +14,20 @@ const Mangas =()=> {
     }, [])
 
     const mangaCards = manga.map(manga => {
+
         return <Card
                 key={manga.manga_id}
                 id={manga.manga_id}
-                name={manga.name}
+                title={manga.title}
                 imgUrl={manga.imgUrl}
-                path={"/manga"}
+                path={"manga"}
             />
     })
 
     return (
         <main className="main" id="mangaMain">
             <div className="container">
-                <h2>Mangas</h2>
-                <div className="row row-cols-1-md-5 g-4">
+                <div className="row row-cols-1-md-5 g-4 mt-1">
                     { mangaCards }
                 </div>
             </div>
