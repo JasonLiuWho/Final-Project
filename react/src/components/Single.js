@@ -23,15 +23,17 @@ const Single =()=> {
                         <img src={`/images/${item.imgUrl}`} alt="" className="img-fluid image h-75"/> 
                     </div>
                     <div className="info col-md-7 mt-5"> 
-                        <ul className="image-ul list-unstyled">
-                            <li>Title: {item.title}</li>
-                            <li>Author: {item.author}</li>
-                            <li>Genre: {item.manga_to_genre}</li>
-                            <li>Volume: {item.volume}</li>
-                            <li>Description: {item.mangaDesc}</li>
-                            <li>Released Date: {item.releasedDate}</li>
-                            <li>Publisher: {item.publisher}</li>
-                            <li>Price: ${item.price}</li>
+
+
+                        <ul className="image-ul list-unstyled book-info">
+                            <li className="sub-title mt-3">Title: {item.title}</li>
+                            <li className="sub-title mt-3">Author: {item.author} </li>
+                            <li className="sub-title mt-3">Genre: Shonen </li>
+                            <li className="sub-title mt-3">Volume: {item.volume}</li>
+                            <li className="sub-title mt-3">Description: {item.mangaDesc}</li>
+                            <li className="sub-title mt-3">Released Date: {item.releasedDate}</li>
+                            <li className="sub-title mt-3">Publisher: Viz Media</li>
+                            <li className="sub-title mt-3">Price: ${item.price}</li>
                         </ul>
                     </div>
                 </div>

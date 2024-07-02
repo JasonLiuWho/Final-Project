@@ -17,20 +17,27 @@ CREATE TABLE user (
 CREATE TABLE manga (
     manga_id MEDIUMINT UNSIGNED AUTO_INCREMENT NOT NULL, 
     title VARCHAR(50) NOT NULL,
-    author_id MEDIUMINT UNSIGNED,
+    author_id MEDIUMINT UNSIGNED NOT NULL,
+    genre_id MEDIUMINT UNSIGNED NOT NULL,
     volume VARCHAR(30) NOT NULL,
     mangaDesc MEDIUMTEXT NOT NULL,
     releasedDate VARCHAR(30) NOT NULL,
-    publisher_id MEDIUMINT UNSIGNED,
+    publisher_id MEDIUMINT UNSIGNED NOT NULL,
     price VARCHAR(25) NOT NULL,
     imgUrl MEDIUMTEXT, 
+    manga_to_genre_id MEDIUMINT UNSIGNED NOT NULL,
     CONSTRAINT pk_manga_id PRIMARY KEY (manga_id)
+    CONSTRAINT fk_author_id FOREIGN KEY (author_id) REFERENCES author (author_id),
+    CONSTRAINT fk_genre_id FOREIGN KEY (genre_id) REFERENCES genre (genre_id),
+    CONSTRAINT fk_publisher_id FOREIGN KEY (publisher_id) REFERENCES publisher (publisher_id),
 );
+
+    -- CONSTRAINT fk_manga_to_genre FOREIGN KEY (manga_to_genre) REFERENCES manga_to_genre (manga_to_genre)
 
 CREATE TABLE author (
     author_id MEDIUMINT UNSIGNED AUTO_INCREMENT NOT NULL,
     author VARCHAR(30) NOT NULL,
-    CONSTRAINT pk_author_id PRIMARY KEY (author_id)
+    CONSTRAINT pk_author_id PRIMARY KEY (author_id) 
 );
 
 CREATE TABLE genre (

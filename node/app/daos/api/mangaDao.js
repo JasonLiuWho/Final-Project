@@ -3,6 +3,30 @@ const con = require("../../config/dbconfig")
 const mangaDao = {
     table: "manga",
 
+    
+    getInfo: (res, table, id)=> {
+    
+        con.execute(
+            `SELECT m.manga_id, m.title, a.author, g.genre, m.volume, m.mangaDesc, m.releasedDate, p.publisher, m.price, m.imgUrl
+            FROM manga m
+            JOIN author a USING (author_id)
+            JOIN genre g USING (genre_id)
+            JOIN publisher p USING (publisher_id)
+            WHERE m.manga_id = ${id}; `,
+            (error, rows)=> {
+                if (!error) {
+                    if (rows.length === 1) {
+                        res.json(...rows)
+                    } else {
+                        res.json(rows)
+                    }
+                } else {
+                    console.log("DAO ERROR:", error)
+                }
+                }
+            )
+        },
+
     create: (req, res, table)=> {
         if (Object.keys(req.body).length === 0)
             {

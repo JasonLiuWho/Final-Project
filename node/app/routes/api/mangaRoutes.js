@@ -12,7 +12,7 @@ router.get("/sort", (req, res)=> {
 })
 
 router.get("/:id", (req, res)=> {
-    dao.findById(res, dao.table, req.params.id)
+    dao.getInfo(res, dao.table, req.params.id)
 })
 
 router.get("/create", (req, res)=> {

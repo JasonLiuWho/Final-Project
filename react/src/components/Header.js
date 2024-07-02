@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom"
 
-
 const Header =()=> {
 
     return (
@@ -9,7 +8,7 @@ const Header =()=> {
                 <div className="row">
                     <div className="col-md-4">
                         <div className="text-capitalize text-center">
-                            <h1 className="mangaTitle">No Mangas</h1>
+                            <h1 className="manga-title">No Mangas</h1>
                         </div>
                     </div>
                     <div className="col-md-8">

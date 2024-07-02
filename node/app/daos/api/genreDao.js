@@ -3,6 +3,7 @@ const con = require("../../config/dbconfig")
 const genreDao = {
     table: "genre",
 
+
     sort: (req, table)=> {
         con.execute(
             `SELECT * FROM ${table} ORDER BY genre_id ;`,

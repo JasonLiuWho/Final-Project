@@ -15,6 +15,7 @@ router.get("/api", (req, res)=> {
 
 const tables = ["user", "manga", "author", "genre", "publisher"]
 
+// forEach loop for all tables(reusealbe code)
 tables.forEach(table => {
     router.use(`/api/${table}`, require(`./api/${table}Routes`))
 })

@@ -9,8 +9,8 @@ const Cards =(props)=> {
             <div className="card h-100">
                 <img src={`/images/${props.imgUrl}`} alt={props.title} className="img-fluid image card-img-top"/>
                 <div className="card-body">
-                    <h2 className="card-title text-center nav-link">
-                        <Link to={`/${props.path}/${props.id}`} className="text-decoration-none">
+                    <h2 className="card-title text-center ">
+                        <Link to={`/${props.path}/${props.id}`} className="text-decoration-none card-link">
                         {props.title}
                         </Link>
                     </h2>
